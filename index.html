@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>JavaScript Quiz</title>
+	<link rel="stylesheet" href="./assets/style.css">
+</head>
+
+<body>
+	<header>
+		<h1>JavaScript Quiz</h1>
+	</header>
+
+	<main>
+		<section id="landing-page">
+			<h2>Welcome to the JavaScript Quiz!</h2>
+
+			<p>You will have 60 seconds to answer 4 multiple-choice questions on JavaScript fundamentals. Good luck!</p>
+
+			<button id="start-btn">Start Quiz</button>
+		</section>
+
+		<section id="quiz-page" class="hide">
+			<h2 id="question">Question 1</h2>
+			<ul id="choices">
+				<li><input type="radio" name="choice" value="A"> <span id="choiceA"></span></li>
+				<li><input type="radio" name="choice" value="B"> <span id="choiceB"></span></li>
+				<li><input type="radio" name="choice" value="C"> <span id="choiceC"></span></li>
+				<li><input type="radio" name="choice" value="D"> <span id="choiceD"></span></li>
+			</ul>
+			
+			
+			<button id="submit-btn">Submit Answer</button>
+			<p id="timer">Time remaining: 60 seconds</p>
+		</section>
+
+		<section id="score-page" class="hide">
+			<h2>Quiz Complete!</h2>
+
+			<p>Your final score is <span id="final-score"></span>.</p>
+
+			<form>
+				<label for="initials">Enter your initials:</label>
+				<input type="text" id="initials" name="initials" maxlength="3">
+				<button id="submit-score">Submit Score</button>
+			</form>
+
+		</section>
+
+		<section id="high-scores-page" class="hide">
+			<h2>High Scores</h2>
+			<ol id="high-scores-list"></ol>
+		</section>
+
+	</main>
+
+	<footer>
+		<p>&copy; 2023 JavaScript Quiz</p>
+	</footer>
+	<script src="./assets/script.js"></script>
+</body>
+</html>
